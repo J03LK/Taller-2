@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <title>carniceria</title>
+</head>
+<body>
+    <header class="container-fluid bg-warning d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6 text-primary"> <h1>SuperMarket</h1></p>
+        <img src="imagenes/supermarket.png" alt="logo" class="logo" width="100" height="100">
+    </header>
+    <hr>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 caja d-flex justify-content-center">
+                <h2 class="titulo"><strong>Carnicería</strong></h2>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-principal">
+        <div class="caja caja-1" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Chorizo Parrillero" data-price="$3.30" data-image="imagenes car/chorizo.jpg">
+            <h2>Chorizo Parrillero</h2>
+            <img src="imagenes car/chorizo.jpg" alt="Chorizo Parrillero" height="100px" width="100px">
+            <h3>$3.30</h3>
+        </div>
+        <div class="caja caja-2" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Chuleta de Cerdo" data-price="$3.24" data-image="imagenes car/chuleta.jpg">
+            <h2>Chuleta de Cerdo</h2>
+            <img src="imagenes car/chuleta.jpg" alt="Chuleta de Cerdo" height="100px" width="100px">
+            <h3>$3.24</h3>
+        </div>
+        <div class="caja caja-3" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Costillas de Cerdo" data-price="$5.75" data-image="imagenes car/costillas.jpg">
+            <h2>Costillas de Cerdo</h2>
+            <img src="imagenes car/costillas.jpg" alt="Costillas de Cerdo" height="100px" width="100px">
+            <h3>$5.75</h3>
+        </div>
+        <div class="caja caja-4" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Medallón de Res" data-price="$7.52" data-image="imagenes car/medallon.jpg">
+            <h2>Medallón de Res</h2>
+            <img src="imagenes car/medallon.jpg" alt="Medallón de Res" height="100px" width="100px">
+            <h3>$7.52</h3>
+        </div>
+        <div class="caja caja-5" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Carne Molida" data-price="$3.49" data-image="imagenes car/molida.webp">
+            <h2>Carne Molida</h2>
+            <img src="imagenes car/molida.webp" alt="Carne Molida" height="100px" width="100px">
+            <h3>$3.49</h3>
+        </div>
+        <div class="caja caja-6" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pollo Entero con Vísceras" data-price="$7.10" data-image="imagenes car/pollo.webp">
+            <h2>Pollo Entero con Vísceras</h2>
+            <img src="imagenes car/pollo.webp" alt="Pollo Entero con Vísceras" height="100px" width="100px">
+            <h3>$7.10</h3>
+        </div>
+    </div>
+</div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="productImage" src="" alt="Imagen del producto" class="img-fluid mb-3">
+                    <p id="productName"></p>
+                    <p id="productPrice"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $('#productModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Botón que activó el modal
+        var product = button.data('product'); // Extraer información de los atributos data-product
+        var price = button.data('price'); // Extraer información de los atributos data-price
+        var image = button.data('image'); // Extraer información de los atributos data-image
+
+        var modal = $(this);
+        modal.find('.modal-title').text(product);
+        modal.find('#productName').text('Producto: ' + product);
+        modal.find('#productPrice').text('Precio: ' + price);
+        modal.find('#productImage').attr('src', image);
+    });
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <hr>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <a href="#top" class="btn btn-primary btn-lg">Ir al inicio</a>
+                    <a href="index.html" class="btn btn-secondary btn-lg">Ir a la página principal</a>
+                </div>
+            </div>
+        </div> 
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Conéctate con nosotros en las redes sociales:</span>
+                </div>
+                <div>
+                    <a href="https://facebook.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://instagram.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://linkedin.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+            </section>
+            
+            <section>
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">SuperMarket</h6>
+                            <p>Encuentra todo lo que necesitas en nuestro supermercado con los mejores precios y calidad.</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+                            <p><a href="productos.html" class="text-reset">Frutas y Verduras</a></p>
+                            <p><a href="panaderia.html" class="text-reset">Panadería</a></p>
+                            <p><a href="carniceria.html" class="text-reset">Carnicería</a></p>
+                            <p><a href="dulceria.html" class="text-reset">Dulcería</a></p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+                            <p><a href="cuenta.html" class="text-reset">Tu cuenta</a></p>
+                            <p><a href="#!" class="text-reset">Descuentos</a></p>
+                            <p><a href="nosotros.html" class="text-reset">Nosotros</a></p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                            <p><i class="bi bi-house-fill me-3"></i> Mariscal Sucre y Ajaví, Quito, Ecuador</p>
+                            <p><i class="bi bi-envelope-fill me-3"></i> info@supermarket.com</p>
+                            <p><i class="bi bi-phone-fill me-3"></i> + 593 963 151 998</p>
+                            <p><i class="bi bi-printer-fill me-3"></i> + 593 257 110 2</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 Copyright: SuperMarket.com
+            </div>
+        </footer>
+        <script>
+            $(document).ready(function() {
+                $('.caja').on('click', function() {
+                    var product = $(this).data('product');
+                    var price = $(this).data('price');
+                    var image = $(this).data('image');
+                    $('#productModalLabel').text(product);
+                    $('#product-image').attr('src', image);
+                    $('#product-price').text(price);
+                });
+            });
+        </script>
+    </body>
+    </html>
+    

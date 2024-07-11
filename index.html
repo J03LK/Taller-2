@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Supermarket</title>
+</head>
+<body>
+    <header class="container-fluid bg-warning">
+        <div class="container-hero">
+            <img src="imagenes/supermarket.png" alt="logo" class="logo" width="100" height="110">
+            <h1 class="text ms-3 mb-0">SuperMarket</h1>
+        </div>
+        <div class="customer-support">
+            <i class="bi bi-headset fa-2x me-2"></i>
+            <div class="content-customer-support">
+                <span class="text">Soporte al cliente</span>
+                <span class="number">2-517-102</span>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid mi-nav">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="nosotros.html"><strong>Nosotros</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productos.html">Frutas y verduras</a></li>
+                            <li><a class="dropdown-item" href="panaderia.html">Panadería</a></li>
+                            <li><a class="dropdown-item" href="carniceria.html">Carnicería</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dulceria.html">Dulcería</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <img src="imagenes/frutas.jpg" class="d-block carousel-image mx-auto" alt="frutas">
+                </div>
+                <div class="carousel-caption d-none d-md-block custom-caption">
+                    <h2>Frutas</h2>
+                    <h3><p>Una selección de las frutas más frescas.</p></h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="imagenes/panaderia.jpg" class="d-block carousel-image mx-auto" alt="panaderia">
+                </div>
+                <div class="carousel-caption d-none d-md-block custom-caption">
+                    <h2>Panadería</h2>
+                    <h3><p>Pan recién horneado cada día.</p></h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="imagenes/carniceria.jpg" class="d-block carousel-image mx-auto" alt="carniceria">
+                </div>
+                <div class="carousel-caption d-none d-md-block custom-caption">
+                    <h2>Carnicería</h2>
+                    <h3><p>La mejor carne de la ciudad.</p></h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="imagenes/dulceria.jpg" class="d-block carousel-image mx-auto" alt="dulceria">
+                </div>
+                <div class="carousel-caption d-none d-md-block custom-caption">
+                    <h2>Dulcería</h2>
+                    <h3><p>Los dulces más deliciosos.</p></h3>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="contenedor-principal">
+        <div class="caja caja-1" data-bs-toggle="modal" data-bs-target="#productModal" data-product="1KL De Tomate" data-price="$1.25" data-image="imagenes/tomate.jpg">
+            <h2>1KL De Tomate</h2>
+            <img src="imagenes/tomate.jpg" alt="tomate" height="100px" width="100px">
+            <h3>$1.25</h3>
+        </div>
+        <div class="caja caja-2" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Avena YA! en hojuelas" data-price="$3.24" data-image="imagenes/avena.jpg">
+            <h2>Avena YA! en hojuelas</h2>
+            <img src="imagenes/avena.jpg" alt="avena" height="100px" width="100px">
+            <h3>$3.24</h3>
+        </div>
+        <div class="caja caja-3" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Jamon de espalda" data-price="$2.65" data-image="imagenes/jamon.png">
+            <h2>Jamon de espalda</h2>
+            <img src="imagenes/jamon.png" alt="Jamon" height="100px" width="100px">
+            <h3>$2.65</h3>
+        </div>
+        <div class="caja caja-4" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Chupetes Bombombum" data-price="$1.79" data-image="imagenes/chupetes.jpg">
+            <h2>Chupetes Bombombum</h2>
+            <img src="imagenes/chupetes.jpg" alt="Chupetes" height="100px" width="100px">
+            <h3>$1.79</h3>
+        </div>
+        <div class="caja caja-5" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Tomahawk Premium" data-price="$20.79" data-image="imagenes/carne.jpg">
+            <h2>Tomahawk Premium</h2>
+            <img src="imagenes/carne.jpg" alt="carne" height="100px" width="100px">
+            <h3>$20.79</h3>
+        </div>
+        <div class="caja caja-6" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Chocolatina Jet" data-price="$0.99" data-image="imagenes/jet.jpg">
+            <h2>Chocolate Jet</h2>
+            <img src="imagenes/jet.jpg" alt="chocolatina" height="100px" width="100px">
+            <h3>$0.99</h3>
+        </div>
+    </div>
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Detalles del producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="product-name"></h5>
+                    <img id="product-image" src="" alt="Producto" class="img-fluid mb-3">
+                    <p id="product-price"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Conéctate con nosotros en las redes sociales:</span>
+            </div>
+            <div>
+                <a href="https://facebook.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">SuperMarket</h6>
+                        <p>Encuentra todo lo que necesitas en nuestro supermercado con los mejores precios y calidad.</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+                        <p><a href="productos.html" class="text-reset">Frutas y Verduras</a></p>
+                        <p><a href="panaderia.html" class="text-reset">Panadería</a></p>
+                        <p><a href="carniceria.html" class="text-reset">Carnicería</a></p>
+                        <p><a href="dulceria.html" class="text-reset">Dulcería</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+                        <p><a href="cuenta.html" class="text-reset">Tu cuenta</a></p>
+                        <p><a href="#!" class="text-reset">Descuentos</a></p>
+                        <p><a href="nosotros.html" class="text-reset">Nosotros</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="bi bi-house-fill me-3"></i> Mariscal Sucre y Ajaví, Quito, Ecuador</p>
+                        <p><i class="bi bi-envelope-fill me-3"></i> info@supermarket.com</p>
+                        <p><i class="bi bi-phone-fill me-3"></i> + 593 963 151 998</p>
+                        <p><i class="bi bi-printer-fill me-3"></i> + 593 257 110 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright: SuperMarket.com
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('.caja').on('click', function() {
+                var product = $(this).data('product');
+                var price = $(this).data('price');
+                var image = $(this).data('image');
+                $('#productModalLabel').text(product);
+                $('#product-image').attr('src', image);
+                $('#product-price').text(price);
+            });
+        });
+    </script>
+</body>
+</html>

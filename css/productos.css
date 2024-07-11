@@ -1,0 +1,85 @@
+.mi-nav {
+    background-color: rgb(255, 187, 69);
+}
+
+.customer-support {
+    display: flex; /* Asegura que el contenedor use flexbox */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: flex-start; /* Alinea a la izquierda */
+}
+
+h1 {
+    color: red;
+    font-family: 'Cooper Black', Courier, monospace;
+    font-size: 70px;
+    text-align: center;
+}
+
+.custom-caption h2 {
+    color: whitesmoke;
+}
+
+.custom-caption p {
+    color: whitesmoke;
+}
+
+.logo {
+    color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 0px; 
+}
+.carousel-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Tamaño máximo deseado */
+    max-height: 500px; /* Tamaño máximo deseado */
+}
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px; 
+    height: 200px;
+}
+
+.caja-1,
+.caja-2,
+.caja-3,
+.caja-4,
+.caja-5,
+.caja-6 {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer; /* Para indicar que se puede hacer clic */
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer .address-container {
+    max-width: 50%;
+}
+
+.footer .map-container {
+    max-width: 50%;
+}
+
+/* Estilos adicionales para centrar el contenido del container-hero */
+.container-hero {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+

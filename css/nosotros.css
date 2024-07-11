@@ -1,0 +1,36 @@
+.mi-nav {
+    background-color: rgb(255, 187, 69);
+}
+
+h1 {
+    color: red;
+    font-family: 'Cooper Black', Courier, monospace;
+    font-size: 70px;
+    text-align: center;
+}
+
+.image {
+    margin: 50px;
+    height: 350px;
+    width: 500px;
+}
+.container {
+    padding-top: 20px;
+}
+
+.caja-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.caja-6 h2 {
+    text-align: center;
+}
+
+.caja-6 p {
+    text-align: left;
+    width: 100%;
+}
+

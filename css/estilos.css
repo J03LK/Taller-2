@@ -1,0 +1,96 @@
+.mi-nav {
+    background-color: rgb(255, 187, 69);
+}
+
+.customer-support {
+    display: flex; /* Asegura que el contenedor use flexbox */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: flex-start; /* Alinea a la izquierda */
+}
+
+h1 {
+    color: red;
+    font-family: 'Cooper Black', Courier, monospace;
+    font-size: 70px;
+    text-align: center;
+}
+
+.custom-caption h2 {
+    color: whitesmoke;
+}
+
+.custom-caption p {
+    color: whitesmoke;
+}
+
+.logo {
+    color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 0px; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+    max-height: 600px; /* Ajusta la altura máxima según sea necesario */
+}
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px; 
+    height: 200px;
+}
+
+.caja-1,
+.caja-2,
+.caja-3,
+.caja-4,
+.caja-5,
+.caja-6 {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer; /* Para indicar que se puede hacer clic */
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around; /* Ajusta el espacio entre elementos */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Ajusta si es necesario según el contenido */
+}
+
+.footer .address-container,
+.footer .map-container {
+    width: 50%; /* Define el ancho de cada sección */
+    text-align: center; /* Centra el contenido dentro de cada sección */
+}
+
+.footer .social-icons {
+    margin-top: 10px; /* Espacio entre el contenido y los íconos sociales */
+}
+
+.footer .social-icons a {
+    margin: 0 10px; /* Espacio entre los íconos sociales */
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+/* Estilos adicionales para centrar el contenido del container-hero */
+.container-hero {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+/* Centrar contenido del modal */
+.modal-content {
+    text-align: center;
+}
