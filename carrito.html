@@ -58,11 +58,12 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-4">
-        <h2 class="text-center">Carrito de Compras</h2>
-        <table class="table">
+    <div class="container">
+        <h1>Carrito de Compras</h1>
+        <table class="table table-striped">
             <thead>
                 <tr>
+                    <th>Imagen</th>
                     <th>Producto</th>
                     <th>Cantidad</th>
                     <th>Precio</th>
@@ -70,14 +71,60 @@
                     <th>Acciones</th>
                 </tr>
             </thead>
-            <tbody id="cart-table">
-                <!-- Productos del carrito -->
-            </tbody>
+            <tbody id="tbody"></tbody>
         </table>
-        <div class="text-end">
-            <h3>Total: $<span id="cart-total">0.00</span></h3>
+        <div>
+            <strong>Total:</strong> $<span id="total">0.00</span>
         </div>
+        
     </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Conéctate con nosotros en las redes sociales:</span>
+            </div>
+            <div>
+                <a href="https://facebook.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+        </section>
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">SuperMarket</h6>
+                        <p>Encuentra todo lo que necesitas en nuestro supermercado con los mejores precios y calidad.</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+                        <p><a href="productos.html" class="text-reset">Frutas y Verduras</a></p>
+                        <p><a href="panaderia.html" class="text-reset">Panadería</a></p>
+                        <p><a href="carniceria.html" class="text-reset">Carnicería</a></p>
+                        <p><a href="dulceria.html" class="text-reset">Dulcería</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+                        <p><a href="cuenta.html" class="text-reset">Tu cuenta</a></p>
+                        <p><a href="carrito.html" class="text-reset">Carrito</a></p>
+                        <p><a href="nosotros.html" class="text-reset">Nosotros</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="bi bi-house-fill me-3"></i> Mariscal Sucre y Ajaví, Quito, Ecuador</p>
+                        <p><i class="bi bi-envelope-fill me-3"></i> info@supermarket.com</p>
+                        <p><i class="bi bi-phone-fill me-3"></i> + 593 963 151 998</p>
+                        <p><i class="bi bi-printer-fill me-3"></i> + 593 257 110 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright: SuperMarket.com
+        </div>
+    </footer>
     <script src="js/carrito.js"></script>
 </body>
 </html>

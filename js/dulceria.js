@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const productNameElement = document.getElementById('product-name');
     const productImageElement = document.getElementById('product-image');
     const productPriceElement = document.getElementById('product-price');
-    const addToCartButton = document.getElementById('add-to-cart');
+    const addToCartButton = document.getElementById('add-buy');
 
     productModal.addEventListener('show.bs.modal', (event) => {
         const button = event.relatedTarget;
@@ -67,6 +67,4 @@ function actualizarContadorCarrito() {
             console.error('Error:', error);
         });
 }
-
-
 

@@ -1,40 +1,25 @@
 {
   "productos": [
     {
-      "id": "873c",
-      "nombre": "Avena YA! en hojuelas",
-      "precio": 3.24,
-      "imagen": "http://127.0.0.1:5500/imagenes/avena.jpg"
-    },
-    {
-      "id": "1126",
-      "nombre": "1KL De Tomate",
-      "precio": 1.25,
-      "imagen": "http://127.0.0.1:5500/imagenes/tomate.jpg"
-    },
-    {
-      "id": "6dd8",
-      "nombre": "Avena YA! en hojuelas",
-      "precio": 3.24,
-      "imagen": "http://127.0.0.1:5500/imagenes/avena.jpg"
-    },
-    {
-      "id": "300d",
-      "nombre": "Avena YA! en hojuelas",
-      "precio": 3.24,
-      "imagen": "http://127.0.0.1:5500/imagenes/avena.jpg"
-    },
-    {
-      "id": "d559",
+      "id": "aac9",
       "nombre": "Jamon de espalda",
       "precio": 2.65,
-      "imagen": "http://127.0.0.1:5500/imagenes/jamon.png"
+      "imagen": "http://127.0.0.1:5500/imagenes/jamon.png",
+      "cantidad": 1
     },
     {
-      "id": "9897",
-      "nombre": "Jamon de espalda",
-      "precio": 2.65,
-      "imagen": "http://127.0.0.1:5500/imagenes/jamon.png"
+      "id": "e5bd",
+      "nombre": "Chupetes Bombombum",
+      "precio": 1.79,
+      "imagen": "http://127.0.0.1:5500/imagenes/chupetes.jpg",
+      "cantidad": 2
+    },
+    {
+      "id": "ac73",
+      "nombre": "Pan de Molde",
+      "precio": null,
+      "imagen": "http://127.0.0.1:5500/imagenes%20panaderia/model.png",
+      "cantidad": 1
     }
   ]
 }

@@ -96,12 +96,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img id="productImage" src="" alt="Imagen del producto" class="img-fluid mb-3">
-                    <p id="productName"></p>
-                    <p id="productPrice"></p>
+                    <h5 id="product-name"></h5>
+                    <img id="product-image" src="" alt="Producto" class="img-fluid mb-3">
+                    <p id="product-price"></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Comprar</button>
+                    <button type="button" id="add-buy" class="btn btn-primary">Comprar</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                             <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
                             <p><a href="cuenta.html" class="text-reset">Tu cuenta</a></p>
-                            <p><a href="#!" class="text-reset">Descuentos</a></p>
+                            <p><a href="carrito.html" class="text-reset">Carrito</a></p>
                             <p><a href="nosotros.html" class="text-reset">Nosotros</a></p>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -204,6 +204,7 @@
                 });
             });
         </script>
+        <script src="js/dulceria.js"></script>
     </body>
     </html>
     
