@@ -1,0 +1,27 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer .address-container {
+    max-width: 50%;
+}
+
+.footer .map-container {
+    max-width: 50%;
+}
+
+/* Estilos adicionales para centrar el contenido del container-hero */
+.container-hero {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+

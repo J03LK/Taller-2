@@ -47,10 +47,15 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex me-3" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+
+                <a href="carrito.html" class="btn btn-outline-primary">
+                    <i class="bi bi-cart"></i> Carrito <span id="cart-count" class="badge bg-danger">0</span>
+                </a>
+
             </div>
         </div>
     </nav>
@@ -103,33 +108,33 @@
         </button>
     </div>
     <div class="contenedor-principal">
-        <div class="caja caja-1" data-bs-toggle="modal" data-bs-target="#productModal" data-product="1KL De Tomate" data-price="$1.25" data-image="imagenes/tomate.jpg">
+        <div class="caja caja-1" data-bs-toggle="modal" data-bs-target="#productModal" data-product="1KL De Tomate" data-price="1.25" data-image="imagenes/tomate.jpg">
             <h2>1KL De Tomate</h2>
             <img src="imagenes/tomate.jpg" alt="tomate" height="100px" width="100px">
             <h3>$1.25</h3>
         </div>
-        <div class="caja caja-2" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Avena YA! en hojuelas" data-price="$3.24" data-image="imagenes/avena.jpg">
+        <div class="caja caja-2" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Avena YA! en hojuelas" data-price="3.24" data-image="imagenes/avena.jpg">
             <h2>Avena YA! en hojuelas</h2>
             <img src="imagenes/avena.jpg" alt="avena" height="100px" width="100px">
             <h3>$3.24</h3>
         </div>
-        <div class="caja caja-3" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Jamon de espalda" data-price="$2.65" data-image="imagenes/jamon.png">
+        <div class="caja caja-3" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Jamon de espalda" data-price="2.65" data-image="imagenes/jamon.png">
             <h2>Jamon de espalda</h2>
             <img src="imagenes/jamon.png" alt="Jamon" height="100px" width="100px">
             <h3>$2.65</h3>
         </div>
-        <div class="caja caja-4" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Chupetes Bombombum" data-price="$1.79" data-image="imagenes/chupetes.jpg">
+        <div class="caja caja-4" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Chupetes Bombombum" data-price="1.79" data-image="imagenes/chupetes.jpg">
             <h2>Chupetes Bombombum</h2>
             <img src="imagenes/chupetes.jpg" alt="Chupetes" height="100px" width="100px">
             <h3>$1.79</h3>
         </div>
-        <div class="caja caja-5" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Tomahawk Premium" data-price="$20.79" data-image="imagenes/carne.jpg">
+        <div class="caja caja-5" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Tomahawk Premium" data-price="20.79" data-image="imagenes/carne.jpg">
             <h2>Tomahawk Premium</h2>
             <img src="imagenes/carne.jpg" alt="carne" height="100px" width="100px">
             <h3>$20.79</h3>
         </div>
-        <div class="caja caja-6" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Chocolatina Jet" data-price="$0.99" data-image="imagenes/jet.jpg">
-            <h2>Chocolate Jet</h2>
+        <div class="caja caja-6" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Chocolatina Jet" data-price="0.99" data-image="imagenes/jet.jpg">
+            <h2>Chocolatina Jet</h2>
             <img src="imagenes/jet.jpg" alt="chocolatina" height="100px" width="100px">
             <h3>$0.99</h3>
         </div>
@@ -148,24 +153,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart">Agregar al carrito</button>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     <footer class="text-center text-lg-start bg-light text-muted">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
@@ -179,7 +171,6 @@
                 <a href="https://github.com/tupagina" class="me-4 link-secondary" target="_blank"><i class="bi bi-github"></i></a>
             </div>
         </section>
-        
         <section>
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-3">
@@ -214,17 +205,6 @@
             © 2024 Copyright: SuperMarket.com
         </div>
     </footer>
-    <script>
-        $(document).ready(function() {
-            $('.caja').on('click', function() {
-                var product = $(this).data('product');
-                var price = $(this).data('price');
-                var image = $(this).data('image');
-                $('#productModalLabel').text(product);
-                $('#product-image').attr('src', image);
-                $('#product-price').text(price);
-            });
-        });
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,40 @@
+{
+  "productos": [
+    {
+      "id": "873c",
+      "nombre": "Avena YA! en hojuelas",
+      "precio": 3.24,
+      "imagen": "http://127.0.0.1:5500/imagenes/avena.jpg"
+    },
+    {
+      "id": "1126",
+      "nombre": "1KL De Tomate",
+      "precio": 1.25,
+      "imagen": "http://127.0.0.1:5500/imagenes/tomate.jpg"
+    },
+    {
+      "id": "6dd8",
+      "nombre": "Avena YA! en hojuelas",
+      "precio": 3.24,
+      "imagen": "http://127.0.0.1:5500/imagenes/avena.jpg"
+    },
+    {
+      "id": "300d",
+      "nombre": "Avena YA! en hojuelas",
+      "precio": 3.24,
+      "imagen": "http://127.0.0.1:5500/imagenes/avena.jpg"
+    },
+    {
+      "id": "d559",
+      "nombre": "Jamon de espalda",
+      "precio": 2.65,
+      "imagen": "http://127.0.0.1:5500/imagenes/jamon.png"
+    },
+    {
+      "id": "9897",
+      "nombre": "Jamon de espalda",
+      "precio": 2.65,
+      "imagen": "http://127.0.0.1:5500/imagenes/jamon.png"
+    }
+  ]
+}
